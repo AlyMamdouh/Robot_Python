@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.3 on win32)" generated="2024-09-30T14:18:10.755705" rpa="false" schemaversion="5">
+<suite id="s1" name="First Test" source="C:\Users\alyma\PycharmProjects\pythonProject\First_Test.robot">
+<test id="s1-t1" name="Login Test" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-30T14:18:11.019740" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-30T14:18:11.019740" elapsed="2.655298"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-30T14:18:13.675038" elapsed="0.035539"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-30T14:18:13.715754" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-30T14:18:13.715754" elapsed="0.210535"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-30T14:18:13.926289" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-30T14:18:13.926289" elapsed="0.149527"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-30T14:18:14.075816" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-30T14:18:14.075816" elapsed="0.112717"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=shopping_cart_container</arg>
+<arg>3 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-30T14:18:14.188533" elapsed="0.032313"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-30T14:18:14.220846" elapsed="2.196711"/>
+</kw>
+<doc>This test opens a browser, logs in with valid credentials, and verifies login success.</doc>
+<status status="PASS" start="2024-09-30T14:18:11.019740" elapsed="5.397817"/>
+</test>
+<status status="PASS" start="2024-09-30T14:18:10.758023" elapsed="5.659534"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="First Test">First Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
